@@ -1,0 +1,252 @@
+#faq{
+    position: relative;
+    min-height: 1200px;
+    clear: both;
+    height: unset;
+}
+#faq::before{
+    content: "";
+    background: url(../img/faqBg.png);
+    background-size: cover;
+    opacity: 0.3;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+#faq article{
+    padding-top: 200px;
+    position: relative; 
+    left: calc((100% / 12) * 2);
+    width: calc((100% / 12) * 3);
+}
+#faq article span{
+    color: #ff5d8f;
+    font-size: 14px;
+}
+
+#faq article h1{
+    background-image: linear-gradient(90deg, #e00045, #d1099d 30%);
+    color: transparent;
+    -webkit-background-clip: text;
+    padding-top: 21px;
+    position: relative;
+    font-size: 1.5rem;
+}
+#faq .md_line4{
+    padding-top: 25px;
+    width: calc((100vw / 12) * 4);
+}
+#faq .md_line4 div{
+    left: unset;
+    right: 0;
+    background-image: linear-gradient(to left, rgba(255, 255, 255, 0), #ff004e, rgba(255, 255, 255, 0));
+    animation: line_move_right 2s cubic-bezier(0, 0, 0, 0) infinite; position: absolute;
+}
+#faq .faqContainer{
+    margin-top: 70px;
+    color: #fff;
+    position: relative;
+    left: calc((100vw / 12) * 2);;
+    width: calc((100vw / 12) * 7);
+    
+}
+#faq .faqContainer .faqBox{
+    border-bottom: 1px solid #fff;
+    padding: 20px 0;
+}
+#faq .faqContainer .faqBox .headBox{
+    padding-bottom: 30px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+#faq .faqContainer .faqBox .headBox h4{
+    font-size: 18px;
+    line-height: 30px;
+    width: calc(100% - 80px);
+}
+#faq .faqContainer .faqBox p{
+    font-size: 16px;
+    line-height: 26px;
+    color: #9ea4b1;
+    width: 100%!important;
+    display: none;
+}
+#faq .faqContainer .faqBox .cross{
+    width: 30px;
+    height: 30px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#faq .faqContainer .faqBox .cross div{
+    position: absolute;
+    background-color: #fff;
+}
+#faq .faqContainer .faqBox .cross div:first-child{
+    width: 100%;
+    height: 1px;
+    top: unset!important;
+}
+#faq .faqContainer .faqBox .cross div:last-child{
+    width: 1px;
+    height: 100%;
+}
+#faq .faqContainer:first-child .faqBox:nth-child(4) .headBox .cross div:last-child{
+    display: none;
+}
+#faq .faqContainer:first-child .faqBox:nth-child(4) p{
+    display: block;
+}
+.outter{
+    position: relative;
+    display: flex;
+    width: calc((100% / 12) * 9);
+    left: 0;
+    padding-bottom:100px;
+}
+#faq .faqContainer:last-child{
+    /*padding-left: calc((100% / 12) * 1);*/
+}
+
+#contact{
+    position: relative;
+    height: unset;
+}
+#contact article{
+    width:calc((100% / 12) * 9);
+    border:1px solid #ff5d8f;
+    margin-top: 120px;
+    padding:40px 0;
+    position: relative;
+    text-align: center;
+    left:calc((100% / 12) * 2);
+    box-sizing: border-box;
+    border-bottom:none;
+}
+#contact article h1{
+    padding-bottom: 20px;
+    font-size: 24px;
+    color: #ff5d8f;
+}
+#contact article p{
+    font-size: 18px;
+    color: #fff;
+    padding:0 20px;
+}
+#contact .btnBox{
+    width:calc((100% / 12) * 9);
+    position: relative;
+    text-align: center;
+    left:calc((100% / 12) * 2);
+    display: flex;
+    height: 100px;
+    padding-bottom: 300px;
+}
+#contact .btnBox a{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 24px;
+    height: 100%;
+    font-weight: 500;
+}
+#contact .btnBox a:first-child{
+    background-image: linear-gradient(to left, #d1099d, #e00045);
+    color: #fff;    
+}
+#contact .btnBox a:last-child{
+    color: #061434;
+    background-color: #f2d547;
+}
+#contact .btnBox a img{
+    width: 50px;
+    height: 50px;
+    padding-right: 25px;
+}
+@media only screen and (max-width: 800px) {
+    #faq article{
+        left: 0;
+        width: 100%;
+        padding:80px 30px 0;
+        box-sizing: border-box;
+    }
+    #faq article span{
+        font-size: 12px;
+    }
+    #faq article h1{
+        font-size: 22px;
+        padding-top: 15px;
+    }
+    #faq .md_line4{
+        padding-top: 15px;
+        width: 100%;
+    }
+    .outter{
+        width: 100%;
+        padding: 0 30px;
+        box-sizing: border-box;
+        display: block;
+    }
+    #faq .faqContainer{
+        width: 100%;
+        left: 0;
+    }
+    #faq .faqContainer .faqBox .cross{
+        margin-right: 10px;
+        width: 15px;
+        height: 15px;
+    }
+    #faq .faqContainer:last-child{
+        padding: 0;
+        margin-top: 0;
+    }
+    #faq .faqContainer .faqBox .headBox{
+        padding-bottom: 10px;
+    }
+    #faq .faqContainer .faqBox .headBox h4{
+        font-size: 3.2vw;
+        line-height: 1.8;
+    }
+    #faq .faqContainer .faqBox p{
+        font-size: 3.2vw;
+        line-height: 1.8;
+    }
+    #contact article{
+        width: calc(100% - 60px);
+        box-sizing: border-box;
+        margin: 60px 30px 0;
+        padding: 0;
+        left: 0;
+    }
+    #contact .btnBox{
+        width: calc(100% - 60px);
+        left: 0;
+        padding: 0 30px 170px;
+        display: block;
+    }
+    #contact article h1{
+        padding-top: 30px;
+        font-size: 14px;
+    }
+    #contact article p{
+        padding: 0 22px 30px;
+        font-size: 11px;
+        line-height: 18px;
+    }
+    #contact .btnBox a{
+        height: 80px;
+        font-size: 14px;
+    }
+    #contact .btnBox a img{
+        width: 30px;
+        height: 30px;
+        padding-right: 10px;
+    }
+}

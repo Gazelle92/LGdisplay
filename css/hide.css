@@ -1,0 +1,22 @@
+.hide{
+    overflow:hidden;
+    position: relative;
+}
+.hide *{top: 150px; position: relative;}
+.th{
+    padding-bottom: 20px;
+}
+.ht{
+    transition: top ease 0.5s;
+}
+.hs1{transition: top ease .8s;}
+.hs2{transition: top ease 1.1s;}
+.hs3{transition: top ease 1.4s;}
+.hs4{transition: top ease 1.7s;}
+.hs5{transition: top ease 2.0s;}
+
+.hf1{transition: top ease .9s;}
+.hf2{transition: top ease 1.1s;}
+.hf3{transition: top ease 1.3s;}
+.hf4{transition: top ease 1.5s;}
+.hf5{transition: top ease 1.7s;}

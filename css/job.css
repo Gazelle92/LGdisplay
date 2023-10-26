@@ -1,0 +1,323 @@
+#job{
+    position: relative;
+    padding-top: 200px;
+    /*min-height: calc((100vw / 12) * 7);*/
+    overflow: hidden;
+    height: unset;
+    display: flex;
+}
+#job article{
+    
+    position: relative; 
+    padding-left: calc((100% / 12) * 2);
+    width: calc((100% / 12) * 3);
+}
+#job article span{
+    color: #ff5d8f;
+    font-size: 14px;
+}
+
+#job article h1{
+    background-image: linear-gradient(90deg, #e00045, #d1099d 30%);
+    color: transparent;
+    -webkit-background-clip: text;
+    padding-top: 21px;
+    position: relative;
+    font-size: 1.5rem;
+}
+#job .md_line4{
+    padding-top: 25px;
+    width: 80%;
+}
+#job .md_line4 div{
+    left: unset;
+    right: 0;
+    background-image: linear-gradient(to left, rgba(255, 255, 255, 0), #ff004e, rgba(255, 255, 255, 0));
+    animation: line_move_right 2s cubic-bezier(0, 0, 0, 0) infinite; position: absolute;
+}
+#job article ul li{
+    padding-top: 25px;
+    color: #7f8697;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+}
+#job article ul li:nth-child(1){
+    color: #fff;
+}
+#job article ul li div{
+    width: 20px;
+    height: 20px;
+    background-color: #e00045;
+    color: #fff;
+    position: relative;
+    display: flex;
+    border-radius: 100%;
+    font-size: 12px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    margin-left: 4px;
+    bottom: 6px;
+}
+#job article ul li:hover{
+    color: #fff;
+    
+}
+#job .table *{box-sizing: border-box; }
+#job .table{
+    top: 10px;
+    width: 50%;
+    position: relative;
+    /*right:calc((100% / 12) * 1);*/
+    color: #fff;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    display: none;
+    height: fit-content;
+}
+#job #table1{
+    display: grid;
+}
+
+#job .table li{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: calc((100vw / 12) * 1);
+    cursor: pointer;
+    text-align: center;
+    transition: ease all 0.5s;
+    font-size: 1.2vw;
+    line-height: 1.2;
+    border: 1px solid rgba(255, 255, 255, 0.31);
+}
+#job article ul .tl1{
+    opacity: 1;
+}
+#job .table li:hover{
+    background-image: linear-gradient(to left, #d1099d, #e00045);
+}
+#job .table div{
+    position: absolute;
+    background-color: #061434;
+}
+#job .table .left_line{
+    left: 0;
+    width: 2px;
+    height: 100%;
+}
+#job .table .right_line{
+    right: 0;
+    width: 2px;
+    height: 100%;
+}
+#job .table .top_line{
+    top: 0;
+    width: 100%;
+    height: 2px;
+}
+#job .table .bottom_line{
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+}
+.popupPage{
+    width: calc((100% / 12) * 8);
+    position: fixed;
+    right: -100%;
+    background-color: #935382;
+    display: flex;
+    padding: 60px;
+    bottom: 0;
+    color: #fff;
+    transition: ease right 1s;
+    z-index: 15;
+}
+.popupPage .popupWrap{
+    display: flex;
+    position: relative;
+    width: 100%;
+    top: 0;
+}
+
+.popupPage .popupTitle{
+    width:calc(((100vw / 12) * 3) - 60px);
+}
+.popupPage .popupTitle h1{
+    font-size: 30px; 
+    line-height: 36px;
+    padding-bottom: 55px;
+}
+
+.popupPage .popupTitle .pin{
+    display: flex;
+    padding-bottom: 10px;
+    align-items: center;
+}
+.popupPage .popupTitle .pin img{
+    padding-right: 10px;
+    height: 17px;
+    width: 18px;
+    object-fit: contain;
+}
+.popupPage .popupTitle span{
+    font-size: 16px; 
+    padding-bottom: 30px;
+    display: block;
+}
+.popupQna{
+    width:calc(((100vw / 12) * 7) - 60px);
+}
+.popupQna .question, .popupQna .answer{
+    display: flex;
+}
+.popupQna div h2{
+    padding-right: 20px;
+    width: 30px;
+    text-align: center;
+}
+.popupQna div p{
+    width: calc(100% - 30px);
+}
+.popupQna .question{
+    padding-bottom: 20px;
+    align-items: center;
+}
+.popupQna .answer{
+    padding-bottom: 40px;
+}
+.popupQna >div:last-child{
+    padding-bottom: 0;
+}
+.exit{
+    box-sizing: border-box;
+    position: absolute;
+    left: -90px;
+    top: 30px;
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+    z-index: 1;
+}
+.exit div{
+    height: 2px;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    background-color: #fff;
+    position: absolute;
+}
+.exit div:nth-child(1){
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+.exit div:nth-child(2){
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+.ppBg{
+    display: none;
+    top: 0;
+    width: 100vw!important;
+    height: 100vh!important;
+    background-color: #061434;
+    opacity: 0.5;
+    position: fixed;
+    z-index: 14;
+}
+@media only screen and (max-width: 800px) {
+    #job{
+        height: unset;
+        padding-top: 50px;
+        display: block;
+    }
+    #job article{
+        box-sizing: border-box;
+        padding: 30px;
+        width: 100%;
+        left: 0;
+    }
+    #job article span{
+        font-size: 12px;
+    }
+    #job article h1{
+        padding-top: 15px;
+        font-size: 22px
+    }
+    #job .md_line4{
+        padding-top: 15px;
+        width: 100%;
+    }
+    .tableLink{
+        padding-top: 25px;
+    }
+    #job article ul li{
+        padding-top: 15px;
+    }
+    #job .table{
+        position: relative;
+        margin-top: 60px;
+        right: unset;
+        grid-template-columns:repeat(2, 1fr);
+        width: 100%;
+        top: unset;
+    }
+    #job .table li{
+        height: 17vw;
+        font-size: 3.4vw;
+        line-height: 1.2;
+    }
+    .popupPage{
+        width: 100%;
+        height: 100%;
+        padding: 30px 10px 30px 30px;
+        box-sizing: border-box;
+    }
+    .popupPage .popupWrap{
+        flex-direction: column;
+    }
+    .popupQna{
+        width: 100%;
+        position: absolute;
+        top: 200px;
+        height: calc(100vh - 260px);
+    }
+    .popupPage .popupTitle{
+        width: unset;
+    }
+    .popupPage .popupTitle h1{
+        padding-bottom: 30px;
+    }
+    .popupPage .popupTitle .pin{
+        position: absolute;
+        top: 102px;
+        font-size: 14px;
+    }
+    .popupPage .popupTitle div:nth-child(4), .popupPage .popupTitle span:nth-child(5){
+        left: 50%;
+    }
+    .popupPage .popupTitle span{
+        position: absolute;
+        top: 135px;
+        font-size: 14px;
+    }
+    .popupQna{
+        font-size: 12px;
+    }
+    .popupQna .question{
+        padding-bottom: 10px;
+    }
+    .popupQna .answer{
+        padding-bottom: 15px;
+    }
+    .popupPage .exit{
+        display: block;
+        right: 30px;
+        top: 30px;
+        height: 30px;
+        width: 30px;
+        left: unset;
+    }
+}
